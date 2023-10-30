@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function incrementItem(){
+            var item = document.getElementById("items").value;
+            document.getElementById("items").value = +item + 1;
+        }
+        function decrementItem(){
+            var item = document.getElementById("items").value;
+            document.getElementById("items").value = +item - 1;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <label  for="">Items</label>
+        <button onclick="incrementItem()">+</button>
+        <input type="number" id="items" />
+        <button onclick="decrementItem()">-</button>
+        <nav>
+            <div>
+                <p id="navClass">welcome</p>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>
